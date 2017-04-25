@@ -23,8 +23,9 @@ In this survey, 5 research papers from 2013 to 2017 were selected from the ACM d
 
 ## Developer Notes
 
-1. Install [Text Live]() or [Miktex]()
-2. Generate **pdf/index.pdf**
+1. Install [TeX Live](https://www.tug.org/texlive/acquire-netinstall.html) or [Miktex](https://miktex.org/download)
+2. Add bin paths to system or environmental paths 
+3. Generate **pdf/index.pdf**
 
 ```
 latex index.tex -output-directory=log -interaction=nonstopmode
@@ -33,7 +34,7 @@ latex index.tex -output-directory=log -interaction=nonstopmode
 pdflatex index.tex -output-directory=pdf -aux-directory=log -interaction=nonstopmode
 ```
 
-If regenerating the PDF:
+Regenerating the PDF (if references or citations have not changed):
 
 ```
 pdflatex index.tex -output-directory=pdf -aux-directory=log -interaction=nonstopmode
