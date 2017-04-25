@@ -1,0 +1,61 @@
+\documentclass[acmsmall]{acmart}
+
+% Packages
+\usepackage{booktabs} % For formal tables
+\usepackage{enumitem}
+\usepackage{pgfplots}
+\usepackage[ruled]{algorithm2e} % For algorithms
+\renewcommand{\algorithmcfname}{ALGORITHM}
+
+% Format
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+
+% Metadata Information
+\acmJournal{N.A.}
+\acmVolume{N.A.}
+\acmNumber{N.A.}
+\acmArticle{1 N.A. }
+\acmYear{2017}
+\acmMonth{4}
+
+\acmBadgeR[http://ctuning.org/ae/ppopp2016.html]{ae-logo}
+
+% Copyright
+\setcopyright{rightsretained}
+
+% DOI
+\acmDOI{0000001.0000001}
+
+% Document starts
+\begin{document}
+\title{A Brief Survey on Event Detection Methods for Geo-social Media Data}
+\author{Richard Wen}
+\orcid{0000-0002-8904-8152}
+\affiliation{%
+  \institution{Ryerson University}
+  \streetaddress{350 Victoria Street}
+  \city{Toronto}
+  \state{ON}
+  \postcode{M5B2K3}
+  \country{CA}}
+
+\begin{abstract}
+In this survey, 5 research papers from 2013 to 2017 were selected from the ACM digital library by using automated and manual criteria. These 5 papers were summarized to present commonly used raw data structures and processed data structures for geo-social media event detection. It was found that frequency-based event detection methods in the selected papers were commonly implemented with statistical measures to determine irregular frequencies in geo-social media data. These irregular location referenced frequencies were determined as events. In order for event detection methods to take advantage of geo-social media data, algorithms must ideally be efficient, scalable, and adaptable. For future work, incorporating video and sound data, integrating web-based knowledge resources, standardizing data structures, and working towards event prediction were suggested to improve and advance event detection methods for geo-social media data.
+\end{abstract}
+
+\keywords{survey, review, geo, location, social, media, event, detection}
+
+\thanks{
+This work fulfills the requirements of the Knowledge Discovery course instructed by Dr. Cherie Ding during Winter 2017 at Ryerson University. This work used the ACM paper template for journals, but was not intended to be submitted as a publication to the ACM digital library. \textbf{References (such as journal name, article name, volume number, and issue number) to this work are used for template purposes and should not be cited as a publication}.
+}
+
+
+\maketitle
+
+\input{body}
+
+\end{document}
