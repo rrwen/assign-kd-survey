@@ -24,10 +24,13 @@ In this survey, 5 research papers from 2013 to 2017 were selected from the ACM d
 ## Developer Notes
 
 1. Install [TeX Live](https://www.tug.org/texlive/acquire-netinstall.html) or [Miktex](https://miktex.org/download)
-2. Add bin paths to system or environmental paths 
-3. Generate **pdf/index.pdf**
+2. Add bin paths to system or environmental paths
+3. [Clone](https://git-scm.com/docs/git-clone) this repository
+4. Generate **pdf/index.pdf**
 
 ```
+git clone https://github.com/rrwen/assign-kd-survey
+cd assign-kd-survey
 latex index.tex -output-directory=log -interaction=nonstopmode
 bibtex log/index.aux
 latex index.tex -output-directory=log -interaction=nonstopmode
